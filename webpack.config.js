@@ -31,16 +31,18 @@ module.exports = {
         test: /\.jsx$/,
         exclude: /node_modules/,
         use: {
-          loader:'babel-loader',
-          options: {
+          loader: 'babel-loader',
+          options:{
             plugins: [
-              isDevelopment && require('react-refresh/babel')
+              isDevelopment && require.resolve('react-refresh/babel')
             ].filter(Boolean)
-          }
+          },
         },
+      },
+      {
         test: /\.scss$/,
         exclude: /node_modules/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   }
