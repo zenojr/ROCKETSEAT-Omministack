@@ -4,6 +4,10 @@ import '../styles/repositories.scss';
 const repository = {
   name: 'React',
   desciption: 'Form in react',
+  link: 'http://github.com',
+
+  name: 'Angular',
+  desciption: 'Form in angular',
   link: 'http://github.com'
 }
 
